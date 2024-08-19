@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Login</title>
+    <link rel="stylesheet" href="login-styles.css">
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            // Redirect to parent dashboard after login
+            window.location.href = 'pardash.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Parent Login</h2>
+        <form onsubmit="handleLogin(event)">
+            <label for="parent-id">Parent ID:</label>
+            <input type="text" id="parent-id" name="parent-id" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+
